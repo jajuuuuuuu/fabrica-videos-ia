@@ -1,0 +1,16 @@
+{
+  "name": "fabrica-videos-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma modular de producción audiovisual asistida por IA",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "node --watch src/server/index.js",
+    "test": "node --test",
+    "check": "node --check src/server/index.js && node --check src/server/api.js && node --check src/server/queue.js && node --check src/server/media-jobs.js && node --check src/server/audio.js && node --check src/providers/youtube.js && node --check src/providers/runway.js && node --check src/providers/openai.js && node --check src/providers/openai-media.js && node --check src/media/render.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
